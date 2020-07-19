@@ -27,7 +27,6 @@
 	border-color: red;
 }
 
-/* Show green borders when valid */
 .input:valid {
 	border-color: black;
 }
