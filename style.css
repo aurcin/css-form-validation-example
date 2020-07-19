@@ -1,0 +1,33 @@
+.form {
+	margin: 20px auto;
+}
+
+.input__group {
+	font-size: 1.5rem;
+
+	padding: 0.2rem;
+}
+
+.input__label {
+	width: 200px;
+	display: inline-block;
+	text-align: right;
+
+	padding-right: 1rem;
+}
+
+.input {
+	outline: none;
+	border: 1px solid black;
+	padding: 0.3rem;
+}
+
+/* Show red borders when filled, but invalid */
+.input:not(:placeholder-shown) {
+	border-color: red;
+}
+
+/* Show green borders when valid */
+.input:valid {
+	border-color: black;
+}

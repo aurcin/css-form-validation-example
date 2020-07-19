@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<title>Form css validation</title>
+	</head>
+	<body>
+		<h1>Form validation example</h1>
+		<form action="#" class="form">
+			<p class="input__group">
+				<label class="input__label" for="name">Name</label
+				><input
+					class="input"
+					id="name"
+					type="text"
+					placeholder="John"
+					required
+					pattern="[A-Za-z0-9]+"
+					title="Enter a name"
+				/>
+			</p>
+			<p class="input__group">
+				<label class="input__label" for="email">Email</label
+				><input
+					class="input"
+					id="email"
+					type="email"
+					placeholder="mail@mail.lt"
+					required
+				/>
+			</p>
+			<p class="input__group">
+				<label class="input__label" for="password">Password</label
+				><input
+					class="input"
+					id="password"
+					type="password"
+					placeholder="password"
+					required
+					pattern="[A-Za-z0-9]{6,15}"
+					title="Enter a password"
+				/>
+			</p>
+			<p class="input__group">
+				<label class="input__label" for="phone">Phone</label
+				><input
+					class="input"
+					id="phone"
+					type="tel"
+					placeholder="+37069999999"
+					pattern="^([+]?|[00]{2})([0-9]|[ -])*"
+					title="Enter a phone number"
+				/>
+			</p>
+		</form>
+	</body>
+</html>
